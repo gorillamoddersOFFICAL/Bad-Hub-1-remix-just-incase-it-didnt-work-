@@ -23,6 +23,10 @@ local Window = Library.CreateLib("Bad Hub 1", "BloodTheme")
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
     end)
 
+     MainSection:NewButton("Septex Admin (prison life only)", "Prison Life Admin", function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/PrisonLife'),true))()
+    end)
+
 
     --LOCAL PLAYER
     local Player = Window:NewTab("Player")
