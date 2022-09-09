@@ -1,23 +1,10 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Bad Hub 1", "BloodTheme")
+local Window = Library.CreateLib("Bad Hub 2", "BloodTheme")
     -- MAIN
     local Main = Window:NewTab("Main")
     local MainSection = Main:NewSection("Main")
 
 
-    MainSection:NewButton("Back/Front Flip", "Makes you do gymnastics", function()
-        loadstring(game:HttpGet('https://pastebin.com/raw/7wDcPtLk'))()
-    end)
-
-    MainSection:NewToggle("Super-Human", "go fast and jump high", function(state)
-        if state then
-            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 120
-            game.Players.LocalPlayer.Character.Humanoid.JumpPower = 120
-        else
-            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
-            game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
-        end
-    end)
 
     MainSection:NewButton("Infinite Yield", "FE Admin Commands", function()
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
@@ -25,6 +12,10 @@ local Window = Library.CreateLib("Bad Hub 1", "BloodTheme")
 
      MainSection:NewButton("Septex Admin (prison life only)", "Prison Life Admin", function()
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/PrisonLife'),true))()
+    end)
+
+     MainSection:NewButton("Prison Life Script (it has no name lol)", "Prison Life Script With No Name Lol", function()
+        loadstring(game:HttpGet(('https://pastebin.com/raw/VHnxgyBQ'),true))()
     end)
 
 
